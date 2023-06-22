@@ -7597,5 +7597,10 @@
       <field type="int16_t" name="temperature" units="cdegC">Temperature</field>
       <field type="uint16_t" name="humidity" units="c%">Humidity</field>
     </message>
+    <message id="15000" name="SWARM_CONTROL">
+      <description>Commands for controlling and information from drone swarm.</description>
+      <field type="uint32_t" name="timestamp" units="s">32 bit Unix Timestamp in seconds since 00:00:00 01/01/2019.</field>
+      <field type="char[240]" name="json_payload">JSON Payload as a NULL-terminated string.</field>
+    </message>
   </messages>
 </mavlink>
